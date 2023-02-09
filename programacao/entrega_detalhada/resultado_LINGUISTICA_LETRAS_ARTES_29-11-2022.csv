@@ -1,0 +1,12 @@
+ID;TITULO;TIPO;AREAS;MODALIDADE;DATA;HORARIOS;CONFLITOS;IDS_CONFLITOS
+44;Sequestro de carbono na Caatinga;ATIVIDADE;[CIENCIAS_BIOLOGICAS, CIENCIAS_DA_SAUDE];PRESENCIAL;2022-11-29;[9];0;[]
+36;FACETA DIRETA EM RESINA COMPOSTA - UMA VISÃO CONTEMPORÂNEA;ATIVIDADE;[CIENCIAS_SOCIAIS_APLICADA];PRESENCIAL;2022-11-29;[14, 15];2;[75, 82]
+78;Game e Metaverso;ATIVIDADE;[CIENCIAS_EXATAS_E_DA_TERRA, ENGENHARIAS, CIENCIAS_HUMANAS];ONLINE;2022-11-29;[14];5;[75, 30, 49, 82, 83]
+30;Pedagogia do Sensível: narrativas da experiência;ATIVIDADE;[CIENCIAS_EXATAS_E_DA_TERRA];ONLINE;2022-11-29;[14, 15];4;[75, 78, 49, 83]
+83;Qual visão estratégica do Ensino de Computação para atender as oportunidades sociais e históricas do pós-desenvolvimento;ATIVIDADE;[CIENCIAS_EXATAS_E_DA_TERRA, ENGENHARIAS, CIENCIAS_HUMANAS];PRESENCIAL;2022-11-29;[14, 15];5;[75, 78, 30, 49, 82]
+82;Sistema Prisional e Direitos Humanos: decisões da Corte Interamericana sobre as unidades de Pernambuco;MESA_REDONDA;[CIENCIAS_HUMANAS, CIENCIAS_SOCIAIS_APLICADA];ONLINE;2022-11-29;[14, 15];4;[75, 78, 83, 36]
+49;Visão geral sobre alguns trabalhos em Modelagem Matemática e Computacional.;ATIVIDADE;[CIENCIAS_EXATAS_E_DA_TERRA, ENGENHARIAS];ONLINE;2022-11-29;[14, 15];4;[75, 78, 30, 83]
+75;Estratégias de estudo à luz da ciência;ATIVIDADE;[TODAS];PRESENCIAL;2022-11-29;[14, 15];6;[78, 30, 49, 82, 83, 36]
+84;Ambiente virtual de Aprendizagem com licença livre: implantação e utilização do ambiente Openredu;ATIVIDADE;[CIENCIAS_EXATAS_E_DA_TERRA, ENGENHARIAS, CIENCIAS_HUMANAS];ONLINE;2022-11-29;[16, 17];0;[]
+2;ABERTURA;ABERTURA;[TODAS];PRESENCIAL;2022-11-29;[18, 19, 20, 21];1;[52]
+52;Vivências de um Engenheiro de Comissionamento de Subestações de Energia;ATIVIDADE;[CIENCIAS_AGRARIAS, ENGENHARIAS];ONLINE;2022-11-29;[19];1;[2]

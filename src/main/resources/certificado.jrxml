@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificado" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="832" leftMargin="5" rightMargin="5" topMargin="5" bottomMargin="5" uuid="fc893ed1-734f-4120-8e88-4227f4baafbb">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Base" isDefault="true" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" fontSize="10" isPdfEmbedded="true">
+		<box padding="4">
+			<pen lineWidth="0.5"/>
+		</box>
+	</style>
+	<style name="estiloTextoCentral" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" fontSize="16" isPdfEmbedded="true">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$P{FontePequena}.equals(Boolean.FALSE)]]></conditionExpression>
+			<style fontSize="16"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$P{FontePequena}.equals(Boolean.TRUE)]]></conditionExpression>
+			<style fontSize="13"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="Texto" class="java.lang.String">
+		<defaultValueExpression><![CDATA["CERTIFICAMOS QUE <style isBold=\"true\">EU</style> PARTICIPOU COMO <style isBold=\"true\">OUVINTE</style> NA <style isBold=\"true\">III SEMANA CIENTÍFICA DO AGRESTE PERNAMBUCANO</style> – “EDUCAĆÃO ONIPRESENTE FOMENTANDO O ENSINO, PESQUISA E EXTENSÃO”, PROMOVIDA PELA UNIVERSIDADE DE PERNAMBUCO, DE 29 NOVEMBRO A 02 DE DEZEMBRO DE 2022, COM CARGA HORÁRIA DE <style isBold=\"true\">2</style> HORAS."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Fundo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["certificado_ouvinte.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="FontePequena" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[new Boolean("False")]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Nome" class="java.lang.String"/>
+	<background>
+		<band height="555" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="832" height="555" uuid="65ab14a9-8c62-4a94-a5c8-d7c2f190cf7f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA[$P{Fundo}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="340" splitType="Stretch">
+			<textField>
+				<reportElement style="estiloTextoCentral" x="36" y="30" width="760" height="189" uuid="73acbe9f-18db-4f77-88dd-69c766c101ed"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="styled">
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Texto}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="102" y="219" width="228" height="60" uuid="b7a700bd-a71c-42a6-866d-602cadef8ad3"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA["assinatura_direcao.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="519" y="224" width="227" height="59" uuid="eb045267-47aa-4f6b-9ade-e8b2bdad60a3"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA["assinatura_coordenacao.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="22" y="260" width="390" height="28" uuid="3ff12f19-587c-494a-a0f5-9758b7c64444"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ROSÂNGELA ESTEVÃO ALVES FALCÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="274" width="390" height="35" uuid="297e2f07-d73f-4b98-bd90-7894c85538e9"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Diretora da UPE Multicampi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="260" width="396" height="28" uuid="39470d87-db96-42ed-82e2-a1929512df53"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HIGOR RICARDO MONTEIRO SANTOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="278" width="396" height="42" uuid="530b8d90-121a-401c-92b4-5acef72e520f"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Coordenador Setorial de Extensão 
+e Cultura da UPE Multicampi]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
