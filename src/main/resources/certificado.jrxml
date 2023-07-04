@@ -89,7 +89,7 @@
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<imageExpression><![CDATA["assinatura_direcao.png"]]></imageExpression>
+				<imageExpression><![CDATA["assinatura_equerda.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="519" y="224" width="227" height="59" uuid="eb045267-47aa-4f6b-9ade-e8b2bdad60a3"/>
@@ -99,7 +99,7 @@
 					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<imageExpression><![CDATA["assinatura_coordenacao.png"]]></imageExpression>
+				<imageExpression><![CDATA["assinatura_direita.png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="22" y="260" width="390" height="28" uuid="3ff12f19-587c-494a-a0f5-9758b7c64444"/>

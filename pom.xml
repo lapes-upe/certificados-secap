@@ -2,27 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-
 	<modelVersion>4.0.0</modelVersion>
-
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.5.5</version>
 		<relativePath />
 	</parent>
-
-	<groupId>br.upe.secap</groupId>
-	<artifactId>secap-certificados</artifactId>
+	
+	<groupId>br.upe.lapes.certificados</groupId>
+	<artifactId>upe-certificados</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>secap-certificados</name>
-	<description>Gestão de Certificados da SECAP</description>
-
+	<name>upe-certificados</name>
+	<description>Gestão de Certificados da Universidade de Pernambuco</description>
+	
 	<properties>
 		<java.version>8</java.version>
+		<sonar.organization>lapes-upe</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -32,14 +32,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-
 		<dependency>
 			<groupId>org.junit.vintage</groupId>
 			<artifactId>junit-vintage-engine</artifactId>
@@ -51,7 +49,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -67,13 +64,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>com.opencsv</groupId>
 			<artifactId>opencsv</artifactId>
 			<version>5.5.2</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -100,18 +95,15 @@
 			<artifactId>jackson-jaxrs-json-provider</artifactId>
 			<version>2.2.1</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-joda</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>javax.mail</groupId>
 			<artifactId>mail</artifactId>
 			<version>1.5.0-b01</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>
@@ -127,19 +119,16 @@
 			<artifactId>jasperreports</artifactId>
 			<version>6.17.0</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.11.0</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<resources>
 			<resource>
@@ -156,7 +145,6 @@
 				</excludes>
 			</resource>
 		</resources>
-
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -177,5 +165,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
