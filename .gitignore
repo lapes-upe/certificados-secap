@@ -1,7 +1,5 @@
 # Compiled class file
 *.class
-**/certificados/*/
-**/certificados/*/*.*
 /certificados/*/
 /certificados/*/*.*
 
